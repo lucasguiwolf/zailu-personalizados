@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import hero from "@/assets/hero.jpg";
 import caneca from "@/assets/caneca.jpg";
 import chaveiro from "@/assets/chaveiro.jpg";
@@ -48,7 +48,8 @@ function Index() {
           <h1 className="mt-4 font-display text-5xl leading-tight md:text-6xl">Lembranças que ficam na memória.</h1>
           <p className="mt-5 text-lg text-muted-foreground">Brindes personalizados para casamentos, aniversários e empresas — feitos à mão em São José dos Campos.</p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <a href={wa("Olá! Gostaria de um orçamento.")} className="btn-primary">Pedir orçamento no WhatsApp</a>
+            <Link to="/orcamento" className="btn-primary">Orçamento com IA ✨</Link>
+            <a href={wa("Olá! Gostaria de um orçamento.")} className="btn-outline">Pedir orçamento no WhatsApp</a>
             <a href="https://instagram.com/zailupersonalizados" target="_blank" rel="noreferrer" className="btn-outline">Ver Instagram</a>
           </div>
         </div>
